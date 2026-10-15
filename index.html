@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17110b">
   <title>Daniel Kabete | Software Developer</title>
   <meta name="description" content="Daniel Kabete is a software developer turning caffeine and curiosity into clean, working code. Explore his projects and get in touch.">
   <meta property="og:title" content="Daniel Kabete | Software Developer">
   <meta property="og:description" content="Projects, skills and contact details.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,21 +20,11 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Main">
-      <a class="logo" href="#home" aria-label="Daniel Kabete, home">DK</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="logo" href="#home" aria-label="Daniel Kabete, home">DK<span class="logo-orbit" aria-hidden="true">✳</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu" type="button"><span></span><span></span><span></span></button>
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <button class="theme-toggle" type="button" aria-label="Switch to light theme">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-          </button>
-        </li>
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" type="button" aria-label="Switch to light theme"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></li>
       </ul>
     </nav>
   </header>
@@ -41,60 +32,69 @@
   <main>
     <section class="hero" id="home">
       <canvas class="hive" aria-hidden="true"></canvas>
-
-      <div class="container hero-grid">
+      <div class="hero-grid container">
         <div class="hero-text">
           <p class="status reveal" style="--d:.1s"><span class="dot" aria-hidden="true"></span>Open to new projects</p>
-
-          <h1 aria-label="Daniel Kabete">
-            <span class="split" data-split aria-hidden="true">Daniel</span>
-            <span class="split" data-split aria-hidden="true">Kabete</span>
-          </h1>
-
-          <p class="role reveal" style="--d:.9s">Software Developer</p>
-
-          <p class="story reveal" style="--d:1.1s" aria-live="off">
-            <span class="story-prefix">Once upon a commit,</span>
-            <span class="typed" data-lines='["a bug nobody noticed became my favourite teacher.","a coffee went cold while a feature went live.","a blank editor turned into something worth shipping."]'></span><span class="caret" aria-hidden="true"></span>
-          </p>
-
-          <p class="lead reveal" style="--d:1.3s">
-            I speak fluent JavaScript, passable Python and sarcastic <code>console.log</code>. I turn caffeine and curiosity into code that works on the first try, and when it doesn't, we call it a feature.
-          </p>
-
-          <div class="actions reveal" style="--d:1.5s">
-            <a class="btn btn-primary magnetic" href="#projects"><span>View my projects</span></a>
-            <a class="btn btn-ghost magnetic" href="#contact"><span>Get in touch</span></a>
-          </div>
-
-          <ul class="socials reveal" style="--d:1.7s" aria-label="Social links">
-            <li><a href="https://github.com/Dante4K18-Maestro" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://x.com/DanielKabe32336" target="_blank" rel="noopener">X</a></li>
-            <li><a href="https://www.instagram.com/tasmaniandevil23/?hl=en" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="mailto:danielkabete006@gmail.com">Email</a></li>
-          </ul>
+          <p class="eyebrow hero-eyebrow reveal" style="--d:.2s">INDEPENDENT DEVELOPER <span>·</span> NAIROBI, KENYA</p>
+          <h1 aria-label="Daniel Kabete"><span class="split" data-split aria-hidden="true">Daniel</span><span class="split" data-split aria-hidden="true">Kabete<span class="name-period">.</span></span></h1>
+          <p class="role reveal" style="--d:.9s">Software Developer <span class="role-line"></span></p>
+          <p class="story reveal" style="--d:1.1s" aria-live="off"><span class="story-prefix">Once upon a commit,</span><br><span class="typed" data-lines='["a bug nobody noticed became my favourite teacher.","a coffee went cold while a feature went live.","a blank editor turned into something worth shipping."]'></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="lead reveal" style="--d:1.3s">I speak fluent JavaScript, passable Python and sarcastic <code>console.log</code>. I turn caffeine and curiosity into code that works on the first try, and when it doesn't, we call it a feature.</p>
+          <div class="actions reveal" style="--d:1.5s"><a class="btn btn-primary magnetic" href="#projects"><span>View my projects <i>↗</i></span></a><a class="btn btn-ghost magnetic" href="#contact"><span>Get in touch</span></a></div>
+          <ul class="socials reveal" style="--d:1.7s" aria-label="Social links"><li><a href="https://github.com/Dante4K18-Maestro" target="_blank" rel="noopener">GitHub ↗</a></li><li><a href="https://x.com/DanielKabe32336" target="_blank" rel="noopener">X ↗</a></li><li><a href="https://www.instagram.com/tasmaniandevil23/?hl=en" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="mailto:danielkabete006@gmail.com">Email ↗</a></li></ul>
         </div>
-
-        <figure class="portrait reveal" style="--d:.6s">
-          <div class="tilt">
-            <div class="ring" aria-hidden="true"></div>
-            <!-- Replace the placeholder with: <img src="assets/images/profile.jpg" alt="Portrait of Daniel Kabete" width="480" height="560"> -->
-            <div class="portrait-placeholder" role="img" aria-label="Profile photo placeholder">DK</div>
-          </div>
-        </figure>
+        <figure class="portrait reveal" style="--d:.6s"><div class="tilt"><div class="ring" aria-hidden="true"></div><div class="portrait-placeholder" role="img" aria-label="Profile photo placeholder">DK<span>✳</span></div><span class="portrait-note">IDEAS INTO<br>INTERFACES / 001</span></div></figure>
       </div>
-
       <a class="scroll-cue" href="#about" aria-label="Scroll to the next section"><span></span></a>
+      <div class="hero-index" aria-hidden="true"><span>SCROLL TO BEGIN</span><span>01 / 04</span></div>
     </section>
+
+    <section class="chapter about-section" id="about">
+      <div class="container">
+        <div class="section-top"><span>01 — THE BACKSTORY</span><span>A LITTLE ABOUT ME</span></div>
+        <article class="origin-story">
+          <p class="chapter-kicker">THE STORY SO FAR · SYOKIMAU TO SOFTWARE</p>
+          <h2>From Borrowed Screens<br>to Building <em>Systems.</em></h2>
+          <div class="origin-copy">
+            <p>Before there were keyboards under my own fingers, there was wonder. Growing up in Syokimau, access to the digital world was not a given—it was a treasure to be sought. In the quiet gaps where resources were scarce, I found light in borrowed screens, neighboring windows, and the shared facilities of local schools. To most, a computer was merely a tool; to me, it was a gateway to infinite possibility.</p>
+            <p>Driven by an unrelenting curiosity and an unwavering resolve to understand the logic behind the glass, I leaned boldly into the unknown. What began as fascination matured into an enduring purpose. Supported by the steady encouragement of my family, I navigated my way into environments built to sharpen my craft—forging my practical foundation at Moringa School and advancing my technical discipline at Pwani University.</p>
+            <p>Today, I stand at the intersection of perseverance and innovation. The curious mind who once watched screens from afar is now the engineer writing the code that powers them—turning every line into a testament to resilience, problem-solving, and the endless pursuit of mastery.</p>
+          </div>
+          <a class="inline-link" href="#skills">A few tools in my kit <span>↓</span></a>
+        </article>
+        <div class="storyline"><div class="storyline-line"><span></span></div><article><small>THE SPARK</small><h3>Curiosity first.</h3><p>Pulling apart the “how” until the answer makes sense.</p></article><article><small>THE PRACTICE</small><h3>Try, learn, repeat.</h3><p>Every broken build has something useful to teach.</p></article><article><small>THE PAYOFF</small><h3>Make it useful.</h3><p>Turning those lessons into work people can actually use.</p></article></div>
+      </div>
+    </section>
+
+    <section class="chapter skills-section" id="skills">
+      <div class="container"><div class="section-top"><span>02 — THE TOOLKIT</span><span>SKILLS & CURIOSITIES</span></div><div class="section-heading"><h2>Good tools.<br><em>Better questions.</em></h2><p>I like choosing the right tool for the job—and staying curious about the ones I haven’t met yet.</p></div>
+        <div class="skill-grid"><article class="skill-card"><span class="skill-num">01 / LANGUAGE</span><div class="skill-mark">JS<span>;</span></div><h3>JavaScript</h3><p>My everyday language for bringing ideas to life in the browser.</p><span class="skill-foot">FLUENT ENOUGH TO BE DANGEROUS</span></article><article class="skill-card"><span class="skill-num">02 / LANGUAGE</span><div class="skill-mark python-mark">Py<span>↗</span></div><h3>Python</h3><p>A flexible sidekick for learning, problem-solving and building.</p><span class="skill-foot">PASSABLE, ALWAYS IMPROVING</span></article><article class="skill-card"><span class="skill-num">03 / MINDSET</span><div class="skill-mark idea-mark">✳</div><h3>Curiosity</h3><p>Following questions, exploring approaches and learning by making.</p><span class="skill-foot">CURRENTLY IN PROGRESS</span></article></div>
+      </div>
+    </section>
+
+    <section class="chapter projects-section" id="projects">
+      <div class="container"><div class="section-top"><span>03 — THE WORK</span><span>PROJECTS & EXPERIMENTS</span></div><div class="section-heading"><h2>Learning by<br><em>making things.</em></h2><p>The best way I know to learn is to build. This portfolio is one chapter; the next idea is always somewhere nearby.</p></div>
+        <article class="featured-project"><div class="project-art"><div class="project-window"><div class="window-top"><i></i><i></i><i></i><span>danielkabete.dev / portfolio</span></div><div class="window-content"><span class="window-label">A PERSONAL DIGITAL SPACE</span><strong>Curiosity<br>made <em>visible.</em></strong><div class="window-code"><span>const</span> idea = <b>"make it matter"</b>;<br><span>build</span>(idea);<i></i></div><div class="window-orb"></div></div></div><span class="project-coordinate">NBO / WEB / 001</span></div><div class="project-description"><span class="project-type">PERSONAL PORTFOLIO · 2026</span><h3>A home for the work<br>and the process.</h3><p>A growing portfolio shaped around one idea: the story matters as much as the finished result. Built with HTML, CSS and JavaScript, with motion that follows the content.</p><a class="inline-link" href="https://github.com/Dante4K18-Maestro" target="_blank" rel="noopener">Explore my GitHub <span>↗</span></a></div></article>
+        <div class="project-note"><span class="note-star">✳</span><p>More experiments are taking shape.<br><a href="mailto:danielkabete006@gmail.com">Have an idea to build together? <b>Let’s talk ↗</b></a></p><span class="note-index">NEXT CHAPTER / TBD</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="container contact-inner"><div class="section-top"><span>04 — YOUR TURN</span><span>OPEN TO NEW PROJECTS</span></div><p class="contact-kicker">Have a question, a half-formed idea, or a bug with a good story?</p><h2>Let's make<br>something <em>work.</em></h2><div class="contact-row"><a class="btn btn-primary magnetic" href="mailto:danielkabete006@gmail.com"><span>Start a conversation <i>↗</i></span></a><div class="contact-details"><a href="mailto:danielkabete006@gmail.com">danielkabete006@gmail.com</a><span><a href="tel:+254117339204">+254 117 339 204</a><b>·</b><a href="tel:+254743830595">+254 743 830 595</a></span></div></div></div><div class="contact-orbit orbit-a" aria-hidden="true"></div><div class="contact-orbit orbit-b" aria-hidden="true"></div></section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <p>&copy; <span id="year">2026</span> Daniel Kabete. All rights reserved.</p>
-      <p><a href="mailto:danielkabete006@gmail.com">danielkabete006@gmail.com</a> &nbsp;|&nbsp; <a href="tel:+254117339204">+254 117 339 204</a> &nbsp;|&nbsp; <a href="tel:+254743830595">+254 743 830 595</a></p>
+      <div class="footer-brand"><a class="footer-mark" href="#home" aria-label="Daniel Kabete, back to top">DK<span>✳</span></a><p>&copy; <span id="year">2026</span> Daniel Kabete. All rights reserved.</p></div>
+      <nav class="footer-socials" aria-label="Social links">
+        <span class="footer-label">FIND ME ELSEWHERE</span>
+        <a href="https://github.com/Dante4K18-Maestro" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.8 2.15 3.13 1.63.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.04-1.15 3.04-1.15.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3 0 4.27-2.6 5.21-5.08 5.49.4.35.76 1.02.76 2.06v3.36c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg></a>
+        <a href="https://x.com/DanielKabe32336" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.78 7.75L23.2 22h-6.25l-4.9-7.41L5.57 22H2.43l7.25-8.29L1.8 2h6.41l4.43 6.77L18.9 2Zm-1.1 18h1.73L7.26 3.89H5.4L17.8 20Z"/></svg></a>
+        <a href="https://www.instagram.com/tasmaniandevil23/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.7" cy="6.5" r="1.15" fill="currentColor"/></svg></a>
+        <a href="mailto:danielkabete006@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </nav>
+      <div class="footer-contact"><span class="footer-label">SAY HELLO</span><a href="mailto:danielkabete006@gmail.com">danielkabete006@gmail.com</a><div><a href="tel:+254117339204">+254 117 339 204</a><a href="tel:+254743830595">+254 743 830 595</a></div></div>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
